@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMaq | Abrir chamado</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<header class="header">
+    <h2> TECHMAQ</h2>
+    <a href="painel.html">Voltar ao painel</a>
+</header>
+
+<main class="dashboard">
+
+    <div class="formulario">
+
+        <h1>Abrir chamado</h1>
+        <p>Informe os dados da solicitação.</p>
+
+        <form id="ticketForm">
+
+            <label>Equipamento</label>
+
+            <select id="equipamento" required>
+                <option value="">Selecione</option>
+                <option>Torno CNC</option>
+                <option>Esteira Industrial</option>
+                <option>Compressor de Ar</option>
+                <option>Prensa Hidráulica</option>
+            </select>
+
+            <label>Descrição</label>
+
+            <textarea id="descricao" rows="5"
+                placeholder="Descreva o problema..." required></textarea>
+
+            <label>Prioridade</label>
+
+            <select id="prioridade" required>
+                <option value="">Selecione</option>
+                <option>Baixa</option>
+                <option>Média</option>
+                <option>Alta</option>
+            </select>
+
+            <button type="submit">Registrar chamado</button>
+
+            <div id="feedback"></div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

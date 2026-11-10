@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMaq | Cadastro</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1> TECHMAQ</h1>
+        <p>Crie seu acesso ao sistema</p>
+
+        <h2>Criar conta</h2>
+
+        <form id="registerForm">
+
+            <label>Nome completo</label>
+            <input type="text" id="nome" placeholder="Seu nome" required>
+
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+
+            <label>Senha</label>
+            <input type="password" id="senha" placeholder="Crie uma senha" required minlength="6">
+
+            <button type="submit">Cadastrar</button>
+
+            <div id="feedback"></div>
+
+        </form>
+
+        <p>Já possui conta?
+            <a href="index.html">Fazer login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
